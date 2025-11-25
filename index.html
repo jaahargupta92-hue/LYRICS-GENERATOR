@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoLyrics Hindi - AI Reel Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Expanded Font Collection (30+ Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Arya:wght@400;700&family=Asar&family=Baloo+2:wght@400;600;800&family=Eczar:wght@400;700&family=Gotu&family=Halant:wght@400;600&family=Hind:wght@400;600&family=Kalam:wght@300;400;700&family=Khand:wght@400;600;700&family=Martel:wght@400;700&family=Montserrat:wght@400;700;900&family=Mukta:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Poppins:wght@400;600;800&family=Rajdhani:wght@400;600;700&family=Rozha+One&family=Sarpanch:wght@400;700&family=Teko:wght@400;600&family=Tillana:wght@400;600&family=Yantramanav:wght@400;700&family=Laila:wght@400;700&family=Vesper+Libre:wght@400;700&family=Karma:wght@400;700&family=Kadwa:wght@400;700&family=Kurale&family=Sura:wght@400;700&family=Sahitya:wght@400;700&family=Ranga:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #0f172a;
+        color: #fff;
+      }
+      .font-hindi {
+        font-family: 'Baloo 2', 'Noto Sans Devanagari', sans-serif;
+      }
+      
+      /* Animation Utilities */
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
